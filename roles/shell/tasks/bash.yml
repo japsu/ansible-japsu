@@ -1,2 +1,2 @@
 - name: setup .bash_aliases
-  copy: src=bash_aliases dest=/home/japsu/.bash_aliases
+  copy: src=bash_aliases dest=~/.bash_aliases

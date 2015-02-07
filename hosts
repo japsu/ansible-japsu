@@ -1,2 +1,5 @@
 [foreign-shells]
 bofferi.tracon.fi
+
+[laptops]
+myrmidon.japsu.fi ansible_connection=local
