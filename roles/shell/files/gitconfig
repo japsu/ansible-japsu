@@ -1,0 +1,17 @@
+# ansible
+
+[user]
+        name = Santtu Pajukanta
+        email = santtu@pajukanta.fi
+[color]
+        ui = auto
+[alias]
+        st = status
+        prull = pull --rebase
+        rb = rebase
+        co = checkout
+        ci = commit
+        ff = pull --ff-only
+        aa = add -A
+[push]
+        default = simple

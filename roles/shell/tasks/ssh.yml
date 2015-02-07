@@ -1,0 +1,5 @@
+- name: make sure ~/.ssh exists
+  file: path=/home/japsu/.ssh state=directory mode=0700
+
+- name: set authorized_keys
+  copy: src=authorized_keys dest=/home/japsu/.ssh/authorized_keys mode=0600

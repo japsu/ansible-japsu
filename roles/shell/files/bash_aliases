@@ -1,0 +1,4 @@
+# ansible
+
+alias s='screen -UDR'
+alias g='git'
