@@ -1,0 +1,4 @@
+---
+- hosts: foreign-shells
+  roles:
+    - shell
