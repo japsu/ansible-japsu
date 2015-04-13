@@ -1,5 +1,13 @@
 [foreign-shells]
 bofferi.tracon.fi
+kurikka.tracon.fi
+moukari.tracon.fi
+lakka.kapsi.fi
+hilla.kapsi.fi
+suippokorvain.tukikohta.fi
+jekkubattery.leonidasoy.fi
+irc.leonidasoy.fi
+qb.desucon.fi
 
 [laptops]
 myrmidon.japsu.fi ansible_connection=local
