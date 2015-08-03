@@ -8,6 +8,12 @@ suippokorvain.tukikohta.fi
 jekkubattery.leonidasoy.fi
 irc.leonidasoy.fi
 qb.desucon.fi
+tp.ojamo.fi
+
+[own-shells]
+helios.japsu.fi
+enyo.japsu.fi
+lachesis.japsu.fi
 
 [laptops]
 myrmidon.japsu.fi ansible_connection=local

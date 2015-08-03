@@ -4,6 +4,11 @@
   roles:
     - shell
 
+- hosts: own-shells
+  gather_facts: no
+  roles:
+    - shell
+
 - hosts: laptops
   gather_facts: no
   roles:
