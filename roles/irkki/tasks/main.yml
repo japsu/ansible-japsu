@@ -1,0 +1,12 @@
+- name: install packages
+  apt: name={{item}} state=present
+  notify: restart oidentd
+  sudo: true
+  with_items:
+    - oidentd
+    - irssi
+
+- name: configure oidentd
+  copy: src=oidentd.conf dest=/etc/oidentd.conf
+  sudo: true
+  notify: restart oidentd
