@@ -1,0 +1,9 @@
+- name: create user
+  sudo: true
+  user: >
+    name=japsu
+    comment="Santtu Pajukanta"
+    groups=sudo
+    append=yes
+    password=$6$WDVahgEyROlNq$ZPjovDhnrgas.BS2.Ykc6bBEwqcZLWvDS2rSz5CH0lCBOxQwHQUZKRQipzNmZwR1dxjUeC1l9gVce.rR1hMFY0
+    shell=/bin/bash
