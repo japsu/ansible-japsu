@@ -13,5 +13,7 @@
         ci = commit
         ff = pull --ff-only
         aa = add -A
+        m = merge
+        mm = merge master
 [push]
         default = simple

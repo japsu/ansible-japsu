@@ -1,0 +1,18 @@
+. ~/.bash_aliases
+
+export LC_ALL=fi_FI.UTF-8
+export PATH=/Users/japsu/Work/bin:/Users/japsu/Hobby/bin:/Users/japsu/Personal/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/gnu-tar/libexec/gnubin:/usr/local/bin:/usr/local/sbin:$PATH
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# os x specific aliases
+alias s='mosh lachesis -- screen -UDr'
+
+start() {
+  launchctl load /usr/local/opt/$1/*.plist
+}
+
+stop() {
+  launchctl unload /usr/local/opt/$1/*.plist
+}

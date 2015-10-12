@@ -14,7 +14,6 @@ tp.ojamo.fi
 helios.japsu.fi
 enyo.japsu.fi
 lachesis.japsu.fi
-erebus.japsu.fi
 
 [laptops]
 myrmidon.japsu.fi ansible_connection=local

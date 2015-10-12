@@ -15,5 +15,6 @@
 - hosts: laptops
   gather_facts: no
   roles:
+    - osx
     - shell
     - ruby
