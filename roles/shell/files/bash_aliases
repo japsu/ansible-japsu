@@ -2,3 +2,4 @@
 
 alias s='screen -UDR'
 alias g='git'
+alias m='python manage.py'
