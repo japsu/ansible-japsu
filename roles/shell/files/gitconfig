@@ -17,3 +17,9 @@
         mm = merge master
 [push]
         default = simple
+[transfer]
+        fsckobjects = true
+[fetch]
+        fsckobjects = true
+[receive]
+        fsckObjects = true
