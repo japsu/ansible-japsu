@@ -8,6 +8,14 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # os x specific aliases
 alias s='mosh lachesis -- screen -UDr'
+alias t='ssh -t lachesis -- screen -UDr'
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+
+  # Support "g" alias for git
+  __git_complete g __git_main
+fi
 
 start() {
   launchctl load /usr/local/opt/$1/*.plist
@@ -16,3 +24,7 @@ start() {
 stop() {
   launchctl unload /usr/local/opt/$1/*.plist
 }
+
+if [ -f ~/.iterm2_shell_integration.`basename $SHELL` ]; then
+  source ~/.iterm2_shell_integration.`basename $SHELL`
+fi

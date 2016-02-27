@@ -1,20 +1,23 @@
 # ansible
 
+[core]
+        autocrlf = input
 [user]
         name = Santtu Pajukanta
         email = santtu@pajukanta.fi
 [color]
         ui = auto
 [alias]
-        st = status
-        prull = pull --rebase
-        rb = rebase
-        co = checkout
-        ci = commit
-        ff = pull --ff-only
         aa = add -A
+        br = branch
+        ci = commit
+        co = checkout
+        ff = pull --ff-only
         m = merge
         mm = merge master
+        prull = pull --rebase
+        rb = rebase
+        st = status
 [push]
         default = simple
 [transfer]
