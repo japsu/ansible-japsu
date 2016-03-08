@@ -13,16 +13,21 @@
     - git
     - nodejs
     - openssh
+    - mosh
 
 - name: install software via brew cask
   homebrew_cask: name={{ item }}
   with_items:
+    - adobe-creative-cloud
     - bettertouchtool
+    # - dash # appstore
     - divvy
     - google-chrome
     - iterm2-beta
     - karabiner
-    - sublime-text3
-    - ukelele
-    - dash
+    - microsoft-office
     - paw
+    - slack
+    - sublime-text3
+    - ubar
+    - ukelele

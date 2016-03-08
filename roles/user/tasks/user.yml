@@ -1,5 +1,5 @@
 - name: create user
-  sudo: true
+  become: true
   user: >
     name=japsu
     comment="Santtu Pajukanta"

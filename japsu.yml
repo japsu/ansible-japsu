@@ -7,7 +7,7 @@
 - hosts: own-shells
   gather_facts: no
   roles:
-    - user
+    # - user
     - shell
     - irkki
     - ufw

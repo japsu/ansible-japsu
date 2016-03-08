@@ -1,0 +1,11 @@
+Host lachesis
+    Hostname lachesis.japsu.fi
+    ForwardAgent yes
+
+Host helios
+    Hostname helios.japsu.fi
+    ForwardAgent yes
+
+Host enyo
+    Hostname enyo.japsu.fi
+    ForwardAgent yes

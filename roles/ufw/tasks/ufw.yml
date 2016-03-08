@@ -1,11 +1,11 @@
 - name: install ufw
-  sudo: true
+  become: true
   apt: package=ufw state=installed
 
 # - name: allow ssh through ufw
-#   sudo: true
+#   become: true
 #   ufw: rule=allow port=22 proto=tcp
 
 # - name: enable ufw
-#   sudo: true
+#   become: true
 #   ufw: state=enabled policy=reject
