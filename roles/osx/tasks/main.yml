@@ -1,1 +1,2 @@
-- include: osx.yml tags=osx
+- include: osx.yml
+- include: brew.yml

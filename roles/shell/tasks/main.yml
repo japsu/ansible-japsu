@@ -1,3 +1,3 @@
-- include: ssh.yml tags=shell,shell-ssh,user
-- include: bash.yml tags=shell,shell-bash
-- include: git.yml tags=shell,shell-git
+- include: ssh.yml
+- include: bash.yml
+- include: git.yml
