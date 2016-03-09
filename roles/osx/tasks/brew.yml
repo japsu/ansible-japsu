@@ -6,16 +6,6 @@
     - homebrew/dupes
     - homebrew/versions
 
-- name: install software via brew
-  homebrew: name={{ item }}
-  with_items:
-    - ansible
-    - git
-    - nodejs
-    - openssh
-    - mosh
-    - bash-completion
-
 - name: install software via brew cask
   homebrew_cask: name={{ item }}
   with_items:
@@ -32,3 +22,15 @@
     - sublime-text3
     - ubar
     - ukelele
+    - xquartz
+
+- name: install software via brew
+  homebrew: name={{ item }}
+  with_items:
+    - ansible
+    - git
+    - nodejs
+    - openssh
+    - mosh
+    - bash-completion
+    - wine
