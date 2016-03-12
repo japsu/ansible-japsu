@@ -9,3 +9,17 @@ Host helios
 Host enyo
     Hostname enyo.japsu.fi
     ForwardAgent yes
+
+Host zerg
+    Hostname zerg.fixme.fi
+
+Host zero
+    Hostname zero.internal
+    ProxyCommand ssh zerg -W %h:%p
+
+Host protoss
+    Hostname protoss.fixme.fi
+
+Host prime
+    Hostname prime.internal
+    ProxyCommand ssh protoss -W %h:%p

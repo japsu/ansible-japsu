@@ -9,9 +9,9 @@
 - name: install software via brew cask
   homebrew_cask: name={{ item }}
   with_items:
+    # - dash # appstore
     - adobe-creative-cloud
     - bettertouchtool
-    # - dash # appstore
     - divvy
     - google-chrome
     - iterm2-beta
@@ -19,6 +19,8 @@
     - microsoft-office
     - paw
     - slack
+    - sonos
+    - spotify
     - sublime-text3
     - ubar
     - ukelele
