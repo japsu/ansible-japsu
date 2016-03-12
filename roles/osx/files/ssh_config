@@ -23,3 +23,12 @@ Host protoss
 Host prime
     Hostname prime.internal
     ProxyCommand ssh protoss -W %h:%p
+
+Host kurikka
+    Hostname kurikka.tracon.fi
+
+Host monokkeli
+    Hostname monokkeli.tracon.fi
+
+Host jousi
+    Hostname jousi.tracon.fi
