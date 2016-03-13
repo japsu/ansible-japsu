@@ -12,6 +12,7 @@
     # - dash # appstore
     - adobe-creative-cloud
     - bettertouchtool
+    - chefdk
     - divvy
     - google-chrome
     - iterm2-beta
@@ -30,9 +31,10 @@
   homebrew: name={{ item }}
   with_items:
     - ansible
+    - bash-completion
     - git
+    - mosh
     - nodejs
     - openssh
-    - mosh
-    - bash-completion
+    - pwgen
     - wine
