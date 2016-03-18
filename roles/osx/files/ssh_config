@@ -1,3 +1,5 @@
+# OWN SHELLS
+
 Host lachesis
     Hostname lachesis.japsu.fi
     ForwardAgent yes
@@ -9,6 +11,9 @@ Host helios
 Host enyo
     Hostname enyo.japsu.fi
     ForwardAgent yes
+
+
+# FIXME
 
 Host zerg
     Hostname zerg.fixme.fi
@@ -23,6 +28,12 @@ Host protoss
 Host prime
     Hostname prime.internal
     ProxyCommand ssh protoss -W %h:%p
+
+Host bonk1
+    Hostname bonk1.fixme.fi
+
+
+# TRACON
 
 Host kurikka
     Hostname kurikka.tracon.fi
