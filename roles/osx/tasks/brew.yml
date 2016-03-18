@@ -9,7 +9,6 @@
 - name: install software via brew cask
   homebrew_cask: name={{ item }}
   with_items:
-    # - dash # appstore
     - adobe-creative-cloud
     - bettertouchtool
     - chefdk
@@ -18,6 +17,7 @@
     - iterm2-beta
     - karabiner
     - microsoft-office
+    - numi
     - paw
     - slack
     - sonos
@@ -26,6 +26,14 @@
     - ubar
     - ukelele
     - xquartz
+
+    # order matters
+    - virtualbox
+    - vagrant
+
+    # these are installed from app store instead
+    # - dash
+
 
 - name: install software via brew
   homebrew: name={{ item }}
@@ -36,5 +44,6 @@
     - mosh
     - nodejs
     - openssh
+    - postgresql
     - pwgen
     - wine
