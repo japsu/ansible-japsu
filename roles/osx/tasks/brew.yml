@@ -13,6 +13,7 @@
     - bettertouchtool
     - chefdk
     - divvy
+    - dockertoolbox
     - google-chrome
     - iterm2-beta
     - karabiner
@@ -41,6 +42,8 @@
     - ansible
     - bash-completion
     - git
+    - gnupg2
+    - lftp
     - mosh
     - nodejs
     - openssh
