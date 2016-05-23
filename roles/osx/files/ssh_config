@@ -43,3 +43,17 @@ Host monokkeli
 
 Host jousi
     Hostname jousi.tracon.fi
+
+Host nuoli
+    Hostname nuoli.tracon.fi
+
+Host neula
+    Hostname neula.tracon.fi
+
+
+# TALLESSA
+
+Host jemma
+    #Hostname jemma.tallessa.eu
+    Hostname 163.172.138.104
+    ForwardAgent yes
