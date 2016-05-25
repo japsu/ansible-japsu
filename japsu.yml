@@ -2,19 +2,27 @@
 - hosts: foreign-shells
   gather_facts: no
   roles:
-    - shell
+    - role: shell
+      tags: [shell]
 
 - hosts: own-shells
   gather_facts: no
   roles:
-    # - user
-    - shell
-    - irkki
-    - ufw
+    - role: user
+      tags: [user]
+    - role: shell
+      tags: [shell]
+    - role: irkki
+      tags: [irkki]
+    - role: ufw
+      tags: [ufw]
 
 - hosts: laptops
   gather_facts: no
   roles:
-    - osx
-    - shell
-    - ruby
+    - role: osx
+      tags: [osx]
+    - role: shell
+      tags: [shell]
+    - role: ruby
+      tags: [ruby]

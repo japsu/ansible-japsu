@@ -1,1 +1,1 @@
-- include: ufw.yml tags=ufw
+- include: ufw.yml

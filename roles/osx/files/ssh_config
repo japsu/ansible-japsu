@@ -12,6 +12,10 @@ Host enyo
     Hostname enyo.japsu.fi
     ForwardAgent yes
 
+Host erebus
+    Hostname erebus.japsu.fi
+    ForwardAgent yes
+
 
 # FIXME
 
@@ -48,12 +52,11 @@ Host nuoli
     Hostname nuoli.tracon.fi
 
 Host neula
-    Hostname neula.tracon.fi
+    Hostname neula.kompassi.eu
 
 
 # TALLESSA
 
 Host jemma
-    #Hostname jemma.tallessa.eu
-    Hostname 163.172.138.104
+    Hostname jemma.tallessa.eu
     ForwardAgent yes

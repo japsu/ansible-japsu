@@ -10,3 +10,6 @@
   copy: src=oidentd.conf dest=/etc/oidentd.conf
   become: true
   notify: restart oidentd
+
+- name: allow oidentd through the firewall
+  ufw: rule=allow port=113 proto=tcp

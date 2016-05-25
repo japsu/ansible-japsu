@@ -22,6 +22,7 @@ zerg.fixme.fi
 helios.japsu.fi
 enyo.japsu.fi
 lachesis.japsu.fi
+erebus.japsu.fi ansible_ssh_host=163.172.152.205 ansible_ssh_user=root
 
 [laptops]
 myrmidon.japsu.fi ansible_connection=local
