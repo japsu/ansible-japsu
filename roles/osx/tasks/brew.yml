@@ -7,7 +7,7 @@
     - homebrew/versions
 
 - name: install software via brew cask
-  homebrew_cask: name={{ item }}
+  homebrew_cask: name={{ item }} install_options="force"
   with_items:
     - adobe-creative-cloud
     - bettertouchtool
@@ -20,13 +20,12 @@
     - microsoft-office
     - numi
     - paw
-    - slack
     - sonos
     - spotify
-    - sublime-text3
+    - sublime-text
     - ubar
     - ukelele
-    - xquartz
+    # - xquartz
 
     # order matters
     - virtualbox
@@ -34,6 +33,7 @@
 
     # these are installed from app store instead
     # - dash
+    # - slack
 
 
 - name: install software via brew

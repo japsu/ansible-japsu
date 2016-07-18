@@ -8,14 +8,32 @@
 - hosts: own-shells
   gather_facts: no
   roles:
+    - role: server
+      tags: [server]
     - role: user
       tags: [user]
     - role: shell
       tags: [shell]
-    - role: irkki
-      tags: [irkki]
     - role: ufw
       tags: [ufw]
+
+- hosts: erebus.japsu.fi
+  gather_facts: no
+  roles:
+    - role: irkki
+      tags: [irkki]
+    - role: nginx
+      tags: [nginx]
+    - role: letsencrypt
+      tags: [letsencrypt]
+      # - name: japsu.fi
+      #   subject_alt_name: "DNS:japsu.fi,DNS:kalenteri.japsu.fi,DNS:kuvat.japsu.fi,DNS:www.japsu.fi"
+      # - name: pajukanta.fi
+      #   subject_alt_name: "DNS:pajukanta.fi,DNS:www.pajukanta.fi"
+    # - role: redirect
+    #   tags: [redirect]
+    #   redirect_server_name: kalenteri.japsu.fi
+    #   redirect_target: "https://www.google.com/calendar/embed?src=santtu%40pajukanta.fi&ctz=Europe/Helsinki"
 
 - hosts: laptops
   gather_facts: no

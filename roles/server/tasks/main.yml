@@ -1,0 +1,13 @@
+- name: install some packages
+  apt: name={{ item }} state=installed
+  with_items:
+    - bind9-host
+    - mosh
+    - whois
+
+- name: allow mosh through firewall
+  ufw: rule=allow port={{ item }} proto=udp
+  with_items:
+    - 60000
+    - 60001
+    - 60002

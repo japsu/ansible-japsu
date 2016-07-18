@@ -1,0 +1,21 @@
+# puppet
+
+server {
+    listen 80;
+    server_name {{ redirect_server_name }};
+
+    return 302 {{ redirect_target }}$request_uri;
+}
+
+{% if redirect_ssl %}
+server {
+    listen 443 http2;
+    server_name {{ redirect_server_name }};
+
+    ssl on;
+    ssl_certificate {{ redirect_ssl_certificate }};
+    ssl_certificate_key {{ redirect_ssl_certificate_key }};
+
+    return 302 {{ redirect_target }}$request_uri;
+}
+{% endif %}

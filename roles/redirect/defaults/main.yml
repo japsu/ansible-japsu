@@ -1,0 +1,4 @@
+redirect_template: redirect.nginx.conf.j2
+redirect_ssl: true
+redirect_ssl_certificate: /srv/letsencrypt/secrets/japsu.fi/chained.pem
+redirect_ssl_certificate_key: /srv/letsencrypt/secrets/japsu.fi/domain.key

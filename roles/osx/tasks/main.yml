@@ -1,4 +1,3 @@
 - include: osx.yml
 - include: brew.yml
-- include: ssh.yml
 - include: sublime.yml

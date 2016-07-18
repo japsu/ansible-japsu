@@ -31,7 +31,7 @@ Host protoss
 
 Host prime
     Hostname prime.internal
-    ProxyCommand ssh protoss -W %h:%p
+    ProxyCommand ssh protoss -W 10.1.1.131:22
 
 Host bonk1
     Hostname bonk1.fixme.fi
@@ -60,3 +60,22 @@ Host neula
 Host jemma
     Hostname jemma.tallessa.eu
     ForwardAgent yes
+
+
+# CONIKUVAT
+
+Host desumedia
+    Hostname mediastash.conikuvat.fi
+    User desumedia
+
+Host traconmedia
+    Hostname mediastash.conikuvat.fi
+    User traconmedia
+
+Host conikuvat
+    Hostname youzen.ext.b2.fi
+    User conikuvat
+
+Host uusikuiva
+    Hostname kirito.b2.fi
+    User kuvat

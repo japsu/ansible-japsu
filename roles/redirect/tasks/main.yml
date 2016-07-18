@@ -1,0 +1,10 @@
+- name: install tallessa frontend site config
+  template: src={{ redirect_template }} dest=/etc/nginx/sites-available/{{ redirect_server_name }}
+  notify: restart nginx
+
+- name: enable tallessa frontend site
+  file: >
+    src=/etc/nginx/sites-available/{{ redirect_server_name }}
+    path=/etc/nginx/sites-enabled/{{ redirect_server_name }}
+    state=link
+  notify: restart nginx
