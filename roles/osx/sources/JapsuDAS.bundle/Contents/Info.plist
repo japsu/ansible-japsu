@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>org.sil.ukelele.keyboardlayout.</string>
+	<string>org.sil.ukelele.keyboardlayout.japsudas</string>
 	<key>CFBundleName</key>
-	<string></string>
+	<string>JapsuDAS</string>
 	<key>CFBundleVersion</key>
 	<string></string>
 	<key>KLInfo_JapsuDAS</key>
 	<dict>
 		<key>TISInputSourceID</key>
-		<string>org.sil.ukelele.keyboardlayout..japsudas</string>
+		<string>org.sil.ukelele.keyboardlayout.japsudas.japsudas</string>
 		<key>TISIntendedLanguage</key>
 		<string>fi</string>
 	</dict>

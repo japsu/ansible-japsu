@@ -7,8 +7,8 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # os x specific aliases
-alias s='mosh erebus -- screen -UDr'
-alias t='ssh -t erebus -- screen -UDr'
+alias start="brew services start"
+alias stop="brew services stop"
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
@@ -16,14 +16,6 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   # Support "g" alias for git
   __git_complete g __git_main
 fi
-
-start() {
-  launchctl load /usr/local/opt/$1/*.plist
-}
-
-stop() {
-  launchctl unload /usr/local/opt/$1/*.plist
-}
 
 if [ -f ~/.iterm2_shell_integration.`basename $SHELL` ]; then
   source ~/.iterm2_shell_integration.`basename $SHELL`

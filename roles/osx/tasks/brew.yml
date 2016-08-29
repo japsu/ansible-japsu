@@ -5,6 +5,7 @@
     - caskroom/versions
     - homebrew/dupes
     - homebrew/versions
+    - homebrew/services
 
 - name: install software via brew cask
   homebrew_cask: name={{ item }} install_options="force"
@@ -13,9 +14,9 @@
     - bettertouchtool
     - chefdk
     - divvy
-    - dockertoolbox
+    - docker
     - google-chrome
-    - iterm2-beta
+    - iterm2
     - karabiner
     - microsoft-office
     - numi
@@ -45,7 +46,7 @@
     - gnupg2
     - lftp
     - mosh
-    - nodejs
+    - node
     - openssh
     - postgresql
     - pwgen
