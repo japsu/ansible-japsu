@@ -4,33 +4,33 @@
     - caskroom/cask
     - caskroom/versions
     - homebrew/dupes
-    - homebrew/versions
-    - homebrew/services
+    # - homebrew/versions
+    # - homebrew/services
 
 - name: install software via brew cask
   homebrew_cask: name={{ item }} install_options="force"
   with_items:
     - adobe-creative-cloud
-    - bettertouchtool
-    - chefdk
-    - divvy
+    # - bettertouchtool
+    # - chefdk
+    # - divvy
     - docker
     - google-chrome
     - iterm2
-    - karabiner
+    # - karabiner
     - microsoft-office
     - numi
     - paw
     - sonos
     - spotify
-    - sublime-text
-    - ubar
-    - ukelele
+    # - sublime-text
+    # - ubar
+    # - ukelele
     # - xquartz
 
     # order matters
-    - virtualbox
-    - vagrant
+    # - virtualbox
+    # - vagrant
 
     # these are installed from app store instead
     # - dash
@@ -48,6 +48,6 @@
     - mosh
     - node
     - openssh
-    - postgresql
+    # - postgresql
     - pwgen
     - wine

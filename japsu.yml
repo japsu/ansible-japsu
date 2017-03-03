@@ -42,5 +42,3 @@
       tags: [osx]
     - role: shell
       tags: [shell]
-    - role: ruby
-      tags: [ruby]
