@@ -1,81 +1,46 @@
 # OWN SHELLS
 
-Host lachesis
-    Hostname lachesis.japsu.fi
-    ForwardAgent yes
-
 Host helios
     Hostname helios.japsu.fi
+    User japsu
     ForwardAgent yes
 
 Host enyo
     Hostname enyo.japsu.fi
+    User japsu
     ForwardAgent yes
-
-Host erebus
-    Hostname erebus.japsu.fi
-    ForwardAgent yes
-
-
-# FIXME
-
-Host zerg
-    Hostname zerg.fixme.fi
-
-Host zero
-    Hostname zero.internal
-    ProxyCommand ssh zerg -W %h:%p
-
-Host protoss
-    Hostname protoss.fixme.fi
-
-Host prime
-    Hostname prime.internal
-    ProxyCommand ssh protoss -W 10.1.1.131:22
-
-Host bonk1
-    Hostname bonk1.fixme.fi
 
 
 # TRACON
 
 Host kurikka
     Hostname kurikka.tracon.fi
+    User japsu
 
 Host monokkeli
     Hostname monokkeli.tracon.fi
+    User japsu
 
 Host jousi
     Hostname jousi.tracon.fi
+    User japsu
 
 Host nuoli
     Hostname nuoli.tracon.fi
+    User japsu
 
 Host neula
     Hostname neula.kompassi.eu
+    User japsu
 
+Host putki
+    Hostname putki.tracon.fi
+    User japsu
 
-# TALLESSA
+Host siilo
+    Hostname siilo.tracon.fi
+    User japsu
 
-Host jemma
-    Hostname jemma.tallessa.eu
-    ForwardAgent yes
-
-
-# CONIKUVAT
-
-Host desumedia
-    Hostname mediastash.conikuvat.fi
-    User desumedia
-
-Host traconmedia
-    Hostname mediastash.conikuvat.fi
-    User traconmedia
-
-Host conikuvat
-    Hostname youzen.ext.b2.fi
-    User conikuvat
-
-Host uusikuiva
-    Hostname kirito.b2.fi
-    User kuvat
+Host piilo
+    Hostname piilo.tracon.fi
+    User japsu

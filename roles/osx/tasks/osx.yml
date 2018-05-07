@@ -1,2 +1,2 @@
 - name: setup .profile
-  copy: src=profile dest=~japsu/.profile owner=japsu
+  copy: src=profile dest=~/.profile

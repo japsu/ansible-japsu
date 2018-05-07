@@ -3,3 +3,7 @@
 alias s='screen -UDR'
 alias g='git'
 alias m='DEBUG=true python manage.py'
+alias dc='docker-compose'
+alias dcx='docker-compose exec'
+alias dcm='docker-compose exec web python manage.py'
+alias dc-test='docker-compose -f docker-compose.test.yml up --abort-on-container-exit --exit-code-from=test'
