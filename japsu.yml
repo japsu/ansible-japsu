@@ -1,11 +1,5 @@
 ---
-- hosts: foreign-shells
-  gather_facts: no
-  roles:
-    - role: shell
-      tags: [shell]
-
-- hosts: own-shells
+- hosts: shells
   gather_facts: no
   roles:
     - role: server
@@ -24,3 +18,17 @@
       tags: [osx]
     - role: shell
       tags: [shell]
+
+- hosts: helios
+  gather_facts: no
+  roles:
+    - role: nginx
+      tags: [nginx]
+    - role: redirect
+      tags: [redirect]
+      redirect_server_name: helios.japsu.fi
+      redirect_target: https://github.com/japsu
+      redirect_ssl: false
+      redirect_default: true
+    - role: letsencrypt
+      tags: [letsencrypt]

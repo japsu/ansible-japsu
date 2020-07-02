@@ -2,45 +2,49 @@
 
 Host helios
     Hostname helios.japsu.fi
-    User japsu
     ForwardAgent yes
 
-Host enyo
-    Hostname enyo.japsu.fi
-    User japsu
+Host helios.local
+    Hostname 192.168.71.242
     ForwardAgent yes
-
 
 # TRACON
 
 Host kurikka
     Hostname kurikka.tracon.fi
-    User japsu
 
 Host monokkeli
     Hostname monokkeli.tracon.fi
-    User japsu
-
-Host jousi
-    Hostname jousi.tracon.fi
-    User japsu
 
 Host nuoli
     Hostname nuoli.tracon.fi
-    User japsu
 
 Host neula
     Hostname neula.kompassi.eu
-    User japsu
 
 Host putki
     Hostname putki.tracon.fi
-    User japsu
 
 Host siilo
     Hostname siilo.tracon.fi
-    User japsu
 
 Host piilo
     Hostname piilo.tracon.fi
+
+Host qb1
+    Hostname qb1.con2.fi
+    ProxyJump monokkeli
+
+Host qb2
+    Hostname qb2.con2.fi
+    ProxyJump monokkeli
+
+Host qb3
+    Hostname qb3.con2.fi
+    ProxyJump monokkeli
+
+
+# DEFAULT SETTINGS
+
+Host *
     User japsu
