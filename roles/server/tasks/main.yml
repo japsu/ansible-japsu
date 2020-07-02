@@ -1,8 +1,22 @@
 - name: install some packages
   apt: name={{ item }} state=installed
   with_items:
-    - bind9-host
-    - mosh
+    - acl
+    - apt-transport-https
+    - build-essential
+    - ca-certificates
+    - curl
+    - git
+    - htop
+    - man-db
+    - ntp
+    - python-apt
+    - python-pip
+    - python-dev
+    - rsync
+    - screen
+    - vim
+    - wget
     - whois
 
 - name: allow mosh through firewall
