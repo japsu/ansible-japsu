@@ -10,17 +10,8 @@ Host helios.local
 
 # TRACON
 
-Host kurikka
-    Hostname kurikka.tracon.fi
-
 Host monokkeli
     Hostname monokkeli.tracon.fi
-
-Host nuoli
-    Hostname nuoli.tracon.fi
-
-Host neula
-    Hostname neula.kompassi.eu
 
 Host putki
     Hostname putki.tracon.fi
@@ -30,6 +21,9 @@ Host siilo
 
 Host piilo
     Hostname piilo.tracon.fi
+
+Host riimu
+    Hostname riimu.tracon.fi
 
 Host qb1
     Hostname qb1.con2.fi
@@ -43,8 +37,6 @@ Host qb3
     Hostname qb3.con2.fi
     ProxyJump monokkeli
 
-
-# DEFAULT SETTINGS
-
-Host *
-    User japsu
+Host qb4
+    Hostname qb3.con2.fi
+    ProxyJump monokkeli
