@@ -10,6 +10,10 @@
 	<string></string>
 	<key>KLInfo_JapsuDAS</key>
 	<dict>
+		<key>TICapsLockLanguageSwitchCapable</key>
+		<false/>
+		<key>TISIconIsTemplate</key>
+		<false/>
 		<key>TISInputSourceID</key>
 		<string>org.sil.ukelele.keyboardlayout.japsudas.japsudas</string>
 		<key>TISIntendedLanguage</key>

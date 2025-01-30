@@ -1,5 +1,5 @@
 [shells]
-helios ansible_ssh_host=192.168.71.242 ansible_python=/usr/bin/python3
+helios
 
 [laptops]
 mipha ansible_connection=local
